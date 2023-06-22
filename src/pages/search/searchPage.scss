@@ -1,0 +1,71 @@
+.homePage {
+    padding: 20px;
+    background-color: #f6f7f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  
+    .searchInput {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  
+    .bookshelf {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+  
+      .bookList {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+  
+        .bookItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+  
+          .bookCover {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+          }
+  
+          .bookDetails {
+            .bookTitle {
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+  
+            .bookAuthors {
+              font-size: 14px;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+  
